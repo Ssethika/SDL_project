@@ -1,0 +1,3 @@
+/home/sethika/dev/sdl/example-project/Debug/CMakeFiles/sdl2_demo.dir
+/home/sethika/dev/sdl/example-project/Debug/CMakeFiles/edit_cache.dir
+/home/sethika/dev/sdl/example-project/Debug/CMakeFiles/rebuild_cache.dir
