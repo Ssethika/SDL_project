@@ -1,0 +1,16 @@
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+user.name=Ssethika
+user.email=cristalls0406@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/Ssethika/SDL_project
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+remote.new.url=https://github.com/Ssethika/SDL_project
+remote.new.fetch=+refs/heads/*:refs/remotes/new/*
+remote.anew.url=git@github.com:Ssethika/SDL_project.git
+remote.anew.fetch=+refs/heads/*:refs/remotes/anew/*
