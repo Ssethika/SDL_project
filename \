@@ -8,11 +8,20 @@
 
 #define ERROR(x) error(x)
 
+// Assert if something is valid or not. Good for unit testing.
+
+#define ASSERT(x) assert(x)
+
 // Functions that swap the value of two variable.
 #define SWAP(x, y)                                                             \
   x = y ^ x;                                                                   \
   y = x ^ y;                                                                   \
   x = y ^ x
+
+#define FOR(i, a, end) for (int i = a; i < end, i++)
+#define FOR_INCLUSIVE(i, a, end) for (int i = a; i <= end; i++)
+#define FOR_REVERSE(i, a, b) for (int i = a; i >= end; i--)
+#define FOR_RANGE(a, end) for (int i = a; i < end; i++)
 
 inline void error(std::string x) {
   std::cerr << "\033[31m" << "Error:" << "\033[0m" << x << std::endl;

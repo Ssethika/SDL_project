@@ -129,6 +129,30 @@ sdl2_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/build
 .PHONY : sdl2_demo/fast
 
+src/Render.o: src/Render.cpp.o
+.PHONY : src/Render.o
+
+# target to build an object file
+src/Render.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/Render.cpp.o
+.PHONY : src/Render.cpp.o
+
+src/Render.i: src/Render.cpp.i
+.PHONY : src/Render.i
+
+# target to preprocess a source file
+src/Render.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/Render.cpp.i
+.PHONY : src/Render.cpp.i
+
+src/Render.s: src/Render.cpp.s
+.PHONY : src/Render.s
+
+# target to generate assembly for a file
+src/Render.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/Render.cpp.s
+.PHONY : src/Render.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sdl2_demo"
+	@echo "... src/Render.o"
+	@echo "... src/Render.i"
+	@echo "... src/Render.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

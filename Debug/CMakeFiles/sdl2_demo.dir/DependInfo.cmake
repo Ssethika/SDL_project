@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/sethika/dev/sdl/example-project/src/Render.cpp" "CMakeFiles/sdl2_demo.dir/src/Render.cpp.o" "gcc" "CMakeFiles/sdl2_demo.dir/src/Render.cpp.o.d"
   "/home/sethika/dev/sdl/example-project/src/main.cpp" "CMakeFiles/sdl2_demo.dir/src/main.cpp.o" "gcc" "CMakeFiles/sdl2_demo.dir/src/main.cpp.o.d"
   )
 

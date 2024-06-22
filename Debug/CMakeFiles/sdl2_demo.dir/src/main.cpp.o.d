@@ -228,9 +228,9 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: \
  /usr/include/SDL2/SDL_misc.h /usr/include/SDL2/SDL_opengl.h \
  /usr/include/SDL2/SDL_opengl_glext.h \
  /home/sethika/dev/sdl/example-project/src/util/loggers.hpp \
- /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
- /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
- /usr/include/c++/13/bits/stringfwd.h \
+ /usr/include/assert.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/ostream /usr/include/c++/13/ios \
+ /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h /usr/include/c++/13/bits/postypes.h \
  /usr/include/c++/13/cwchar /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception.h \
@@ -301,4 +301,5 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/assert.h
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/sethika/dev/sdl/example-project/src/util/macros.hpp
