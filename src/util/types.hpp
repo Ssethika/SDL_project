@@ -28,11 +28,7 @@ public:
   T x;
   T y;
 
-  v2(T x, T y) : x(x), y(y) {} // constructor.
-                               /*v2(v2& other_vector) {
-                                       x = other_vector.x;
-                                       y = other_vector.y;
-                               }*/
+  v2(T x, T y) : x(x), y(y) {} 
 };
 
 template <typename T> struct v3 {
@@ -44,8 +40,3 @@ public:
 
   v3(T x, T y, T z) : x(x), y(y), z(z) {}
 };
-
-typedef v2<i32> v2i;
-typedef v3<i32> v3i;
-typedef v2<f32> v2f;
-typedef v3<f32> v3f;

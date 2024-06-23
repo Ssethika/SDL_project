@@ -8,6 +8,5 @@ int main(int argc, char *argv[])
 	FOR_RANGE(0, 5){
 		LOG("HelloWorld");
 	}
-	LOG(TOSTRING(i));
 	return 0;
 }
