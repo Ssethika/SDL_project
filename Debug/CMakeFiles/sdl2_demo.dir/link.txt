@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/sdl2_demo.dir/src/main.cpp.o CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o -o sdl2_demo  /usr/lib/x86_64-linux-gnu/libSDL2.so -lGL 
+/usr/bin/c++ -g -rdynamic CMakeFiles/sdl2_demo.dir/src/main.cpp.o CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o -o sdl2_demo  /usr/lib/x86_64-linux-gnu/libSDL2.so -lGL 

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sdl2_demo.dir/src/main.cpp.o"
   "CMakeFiles/sdl2_demo.dir/src/main.cpp.o.d"
-  "CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o"
-  "CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o.d"
+  "CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o"
+  "CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o.d"
   "sdl2_demo"
   "sdl2_demo.pdb"
 )

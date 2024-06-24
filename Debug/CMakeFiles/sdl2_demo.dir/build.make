@@ -83,30 +83,30 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl2_demo.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sethika/dev/sdl/example-project/src/main.cpp -o CMakeFiles/sdl2_demo.dir/src/main.cpp.s
 
-CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o: CMakeFiles/sdl2_demo.dir/flags.make
-CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o: /home/sethika/dev/sdl/example-project/src/renderer.cpp
-CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o: CMakeFiles/sdl2_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sethika/dev/sdl/example-project/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o -MF CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o.d -o CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o -c /home/sethika/dev/sdl/example-project/src/renderer.cpp
+CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o: CMakeFiles/sdl2_demo.dir/flags.make
+CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp
+CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o: CMakeFiles/sdl2_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sethika/dev/sdl/example-project/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o -MF CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o.d -o CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o -c /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp
 
-CMakeFiles/sdl2_demo.dir/src/renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl2_demo.dir/src/renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sethika/dev/sdl/example-project/src/renderer.cpp > CMakeFiles/sdl2_demo.dir/src/renderer.cpp.i
+CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp > CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.i
 
-CMakeFiles/sdl2_demo.dir/src/renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl2_demo.dir/src/renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sethika/dev/sdl/example-project/src/renderer.cpp -o CMakeFiles/sdl2_demo.dir/src/renderer.cpp.s
+CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp -o CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.s
 
 # Object files for target sdl2_demo
 sdl2_demo_OBJECTS = \
 "CMakeFiles/sdl2_demo.dir/src/main.cpp.o" \
-"CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o"
+"CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o"
 
 # External object files for target sdl2_demo
 sdl2_demo_EXTERNAL_OBJECTS =
 
 sdl2_demo: CMakeFiles/sdl2_demo.dir/src/main.cpp.o
-sdl2_demo: CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o
+sdl2_demo: CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o
 sdl2_demo: CMakeFiles/sdl2_demo.dir/build.make
 sdl2_demo: /usr/lib/x86_64-linux-gnu/libSDL2.so
 sdl2_demo: CMakeFiles/sdl2_demo.dir/link.txt

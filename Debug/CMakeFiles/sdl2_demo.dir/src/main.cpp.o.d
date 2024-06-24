@@ -302,4 +302,6 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
  /home/sethika/dev/sdl/example-project/src/util/macros.hpp \
- /home/sethika/dev/sdl/example-project/src/util/types.hpp
+ /home/sethika/dev/sdl/example-project/src/util/types.hpp \
+ /home/sethika/dev/sdl/example-project/src/windowRenderer.hpp \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_video.h

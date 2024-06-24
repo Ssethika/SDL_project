@@ -7,8 +7,8 @@
 },
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",
-  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o -c /home/sethika/dev/sdl/example-project/src/renderer.cpp",
-  "file": "/home/sethika/dev/sdl/example-project/src/renderer.cpp",
-  "output": "CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o"
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o -c /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/windowRenderer.cpp",
+  "output": "CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o"
 }
 ]

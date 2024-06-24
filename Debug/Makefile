@@ -153,29 +153,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/renderer.o: src/renderer.cpp.o
-.PHONY : src/renderer.o
+src/windowRenderer.o: src/windowRenderer.cpp.o
+.PHONY : src/windowRenderer.o
 
 # target to build an object file
-src/renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o
-.PHONY : src/renderer.cpp.o
+src/windowRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o
+.PHONY : src/windowRenderer.cpp.o
 
-src/renderer.i: src/renderer.cpp.i
-.PHONY : src/renderer.i
+src/windowRenderer.i: src/windowRenderer.cpp.i
+.PHONY : src/windowRenderer.i
 
 # target to preprocess a source file
-src/renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/renderer.cpp.i
-.PHONY : src/renderer.cpp.i
+src/windowRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.i
+.PHONY : src/windowRenderer.cpp.i
 
-src/renderer.s: src/renderer.cpp.s
-.PHONY : src/renderer.s
+src/windowRenderer.s: src/windowRenderer.cpp.s
+.PHONY : src/windowRenderer.s
 
 # target to generate assembly for a file
-src/renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/renderer.cpp.s
-.PHONY : src/renderer.cpp.s
+src/windowRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.s
+.PHONY : src/windowRenderer.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/renderer.o"
-	@echo "... src/renderer.i"
-	@echo "... src/renderer.s"
+	@echo "... src/windowRenderer.o"
+	@echo "... src/windowRenderer.i"
+	@echo "... src/windowRenderer.s"
 .PHONY : help
 
 
