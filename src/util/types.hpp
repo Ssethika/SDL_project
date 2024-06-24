@@ -1,7 +1,7 @@
 #pragma once
 
 // Usefull type definitions to increase speed while programming.
-using b1 = bool;
+using b8 = bool;
 
 using i8 = char;
 using u8 = unsigned char;

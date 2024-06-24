@@ -129,30 +129,6 @@ sdl2_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/build
 .PHONY : sdl2_demo/fast
 
-src/Render.o: src/Render.cpp.o
-.PHONY : src/Render.o
-
-# target to build an object file
-src/Render.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/Render.cpp.o
-.PHONY : src/Render.cpp.o
-
-src/Render.i: src/Render.cpp.i
-.PHONY : src/Render.i
-
-# target to preprocess a source file
-src/Render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/Render.cpp.i
-.PHONY : src/Render.cpp.i
-
-src/Render.s: src/Render.cpp.s
-.PHONY : src/Render.s
-
-# target to generate assembly for a file
-src/Render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/Render.cpp.s
-.PHONY : src/Render.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -177,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/renderer.o: src/renderer.cpp.o
+.PHONY : src/renderer.o
+
+# target to build an object file
+src/renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/renderer.cpp.o
+.PHONY : src/renderer.cpp.o
+
+src/renderer.i: src/renderer.cpp.i
+.PHONY : src/renderer.i
+
+# target to preprocess a source file
+src/renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/renderer.cpp.i
+.PHONY : src/renderer.cpp.i
+
+src/renderer.s: src/renderer.cpp.s
+.PHONY : src/renderer.s
+
+# target to generate assembly for a file
+src/renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/renderer.cpp.s
+.PHONY : src/renderer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sdl2_demo"
-	@echo "... src/Render.o"
-	@echo "... src/Render.i"
-	@echo "... src/Render.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/renderer.o"
+	@echo "... src/renderer.i"
+	@echo "... src/renderer.s"
 .PHONY : help
 
 
