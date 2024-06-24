@@ -7,7 +7,7 @@
 #include <cstdlib>
 
 int main(int argc, char *argv[]) {
-  Renderer renderer1 = Renderer("appliation", 800, 600, SDL_WINDOW_SHOWN);
+  Renderer renderer1 = Renderer("application", 800, 600, SDL_WINDOW_SHOWN);
   renderer1.DisplayWindow();
   return 0;
 }

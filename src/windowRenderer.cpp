@@ -25,9 +25,20 @@ Renderer::~Renderer() {
 	RemoveWindow();
   SDL_Quit();
 }
-
-void Renderer::DisplayWindow() {
-  SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+void Renderer::SetBackgroundColor(const u8& r,const u8& g,const u8& b,const u8& a) noexcept {
+	background_color.red = r;
+	background_color.green = g;
+  background_color.blue = b;
+  background_color.alpha = a;
+};
+void Renderer::SetBackgroundColor(const color& Color) noexcept{
+	background_color.red = Color.red;
+	background_color.green = Color.green;
+	background_color.blue = Color.blue;
+	background_color.alpha = Color.alpha;
+}
+ void Renderer::DisplayWindow() {
+  SDL_SetRenderDrawColor(renderer, background_color.red, background_color.green , background_color.blue, background_color.alpha);
   b8 quit = false;
   SDL_Event e;
   while (!quit) {

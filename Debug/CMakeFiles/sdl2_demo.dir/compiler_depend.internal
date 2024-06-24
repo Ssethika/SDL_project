@@ -3,6 +3,7 @@
 
 CMakeFiles/sdl2_demo.dir/src/main.cpp.o
  /home/sethika/dev/sdl/example-project/src/main.cpp
+ /home/sethika/dev/sdl/example-project/src/util/colors.hpp
  /home/sethika/dev/sdl/example-project/src/util/loggers.hpp
  /home/sethika/dev/sdl/example-project/src/util/macros.hpp
  /home/sethika/dev/sdl/example-project/src/util/types.hpp
@@ -376,6 +377,7 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o
 
 CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o
  /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp
+ /home/sethika/dev/sdl/example-project/src/util/colors.hpp
  /home/sethika/dev/sdl/example-project/src/util/loggers.hpp
  /home/sethika/dev/sdl/example-project/src/util/types.hpp
  /home/sethika/dev/sdl/example-project/src/windowRenderer.hpp

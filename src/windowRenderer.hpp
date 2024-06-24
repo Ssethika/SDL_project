@@ -1,9 +1,12 @@
 #include "SDL.h"
 #include "util/types.hpp"
+#include "util/colors.hpp"
 #include <string>
-// Primary class that handles the renderer
 
-class Renderer {
+// Here is the renderer class 
+
+
+class Renderer{
 private:
   SDL_Window *window;
   SDL_Renderer *renderer;
@@ -13,7 +16,8 @@ private:
   i32 width;
   i32 height;
   u32 flag;
-	i32 background_color;
+	// default background color.
+	color background_color = WHITE;	
 
 public:
   Renderer(std::string name, i32 width, i32 height, u32 flag);
@@ -21,6 +25,12 @@ public:
   Renderer(const Renderer &other) = delete;
   Renderer &operator=(const Renderer &other) = delete;
   ~Renderer();
+
+	// Set background color at runtime.
+	void SetBackgroundColor(const u8& r,const u8& g,const u8& b,const u8& a) noexcept;
+	void SetBackgroundColor(const color& Color) noexcept;
+
   void DisplayWindow();
   void RemoveWindow();
 };
+
