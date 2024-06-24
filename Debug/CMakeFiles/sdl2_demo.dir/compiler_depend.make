@@ -329,10 +329,15 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
@@ -370,6 +375,9 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -379,10 +387,14 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -398,8 +410,10 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
@@ -410,8 +424,11 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/math.h \
+  /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
@@ -681,9 +698,13 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 
 /usr/include/c++/13/system_error:
 
+/usr/include/c++/13/pstl/execution_defs.h:
+
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/new:
+
+/usr/include/c++/13/memory:
 
 /usr/include/c++/13/istream:
 
@@ -691,11 +712,17 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 
 /usr/include/c++/13/ios:
 
+/usr/include/c++/13/ext/concurrence.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /usr/include/c++/13/exception:
 
@@ -715,7 +742,15 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 
 /usr/include/c++/13/bits/stringfwd.h:
 
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
 /usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/include/c++/13/bits/refwrap.h:
 
@@ -761,11 +796,17 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 
 /usr/include/c++/13/bits/basic_ios.h:
 
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
 /usr/include/c++/13/bits/allocator.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -792,6 +833,8 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavecintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/x86gprintrin.h:
+
+/usr/include/c++/13/bits/align.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h:
 
@@ -1029,6 +1072,8 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 
 /usr/include/SDL2/SDL_metal.h:
 
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
 /usr/include/c++/13/bits/new_allocator.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
@@ -1129,6 +1174,8 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avxifmaintrin.h:
 
+/usr/include/c++/13/bits/allocated_ptr.h:
+
 /usr/include/c++/13/bit:
 
 /usr/include/c++/13/cwctype:
@@ -1146,6 +1193,8 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 /usr/include/SDL2/SDL_scancode.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
@@ -1328,6 +1377,8 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/s
 /usr/lib/gcc/x86_64-linux-gnu/13/include/tsxldtrkintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/clwbintrin.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/wchar.h:
 
