@@ -2,11 +2,9 @@
 #include "SDL2/SDL_opengl.h"
 #include "util/loggers.hpp"
 #include "util/macros.hpp"
+#include <memory>
 
 int main(int argc, char *argv[])
 {
-	FOR_RANGE(0, 5){
-		LOG("HelloWorld");
-	}
 	return 0;
 }
