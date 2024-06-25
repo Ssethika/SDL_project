@@ -1,14 +1,26 @@
 [
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",
-  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/sdl2_demo.dir/src/main.cpp.o -c /home/sethika/dev/sdl/example-project/src/main.cpp",
-  "file": "/home/sethika/dev/sdl/example-project/src/main.cpp",
-  "output": "CMakeFiles/sdl2_demo.dir/src/main.cpp.o"
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/InputListener.cpp.o -c /home/sethika/dev/sdl/example-project/src/InputListener.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/InputListener.cpp",
+  "output": "CMakeFiles/tetris.dir/src/InputListener.cpp.o"
 },
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",
-  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o -c /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp",
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/main.cpp.o -c /home/sethika/dev/sdl/example-project/src/main.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/main.cpp",
+  "output": "CMakeFiles/tetris.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/sethika/dev/sdl/example-project/Debug",
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/playerSettings.cpp.o -c /home/sethika/dev/sdl/example-project/src/playerSettings.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/playerSettings.cpp",
+  "output": "CMakeFiles/tetris.dir/src/playerSettings.cpp.o"
+},
+{
+  "directory": "/home/sethika/dev/sdl/example-project/Debug",
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/windowRenderer.cpp.o -c /home/sethika/dev/sdl/example-project/src/windowRenderer.cpp",
   "file": "/home/sethika/dev/sdl/example-project/src/windowRenderer.cpp",
-  "output": "CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o"
+  "output": "CMakeFiles/tetris.dir/src/windowRenderer.cpp.o"
 }
 ]

@@ -1,12 +1,21 @@
 #include "SDL.h"
-#include "util/types.hpp"
 #include "util/colors.hpp"
+#include "util/types.hpp"
 #include <string>
 
-// Here is the renderer class 
+// Here is the renderer class
 
+class IRenderer {
+private:
+  i32 width;
+  i32 height;
 
-class Renderer{
+public:
+  virtual void DisplayWindow() = 0;
+  virtual void RemoveWindow() = 0;
+};
+
+class Renderer : public IRenderer {
 private:
   SDL_Window *window;
   SDL_Renderer *renderer;
@@ -16,8 +25,8 @@ private:
   i32 width;
   i32 height;
   u32 flag;
-	// default background color.
-	color background_color = WHITE;	
+  // default background color.
+  color background_color = WHITE;
 
 public:
   Renderer(std::string name, i32 width, i32 height, u32 flag);
@@ -26,11 +35,10 @@ public:
   Renderer &operator=(const Renderer &other) = delete;
   ~Renderer();
 
-	// Set background color at runtime.
-	void SetBackgroundColor(const u8& r,const u8& g,const u8& b,const u8& a) noexcept;
-	void SetBackgroundColor(const color& Color) noexcept;
+  // Set background color at runtime.
+  virtual void SetBackgroundColor(u8 r, u8 g, u8 b, u8 a) noexcept;
+  virtual void SetBackgroundColor(const color &Color) noexcept;
 
-  void DisplayWindow();
-  void RemoveWindow();
+  virtual void DisplayWindow() override;
+  virtual void RemoveWindow() override;
 };
-

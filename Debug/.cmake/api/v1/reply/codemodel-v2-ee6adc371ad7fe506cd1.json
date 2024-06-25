@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "sdl2_demo",
+					"name" : "tetris",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "sdl2_demo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sdl2_demo-Debug-f9dee3e10098ad2397d9.json",
-					"name" : "sdl2_demo",
+					"id" : "tetris::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tetris-Debug-cc645e5b950165708c63.json",
+					"name" : "tetris",
 					"projectIndex" : 0
 				}
 			]

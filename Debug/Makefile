@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sdl2_demo
+# Target rules for targets named tetris
 
 # Build rule for target.
-sdl2_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdl2_demo
-.PHONY : sdl2_demo
+tetris: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetris
+.PHONY : tetris
 
 # fast build rule for target.
-sdl2_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/build
-.PHONY : sdl2_demo/fast
+tetris/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
+.PHONY : tetris/fast
+
+src/InputListener.o: src/InputListener.cpp.o
+.PHONY : src/InputListener.o
+
+# target to build an object file
+src/InputListener.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/InputListener.cpp.o
+.PHONY : src/InputListener.cpp.o
+
+src/InputListener.i: src/InputListener.cpp.i
+.PHONY : src/InputListener.i
+
+# target to preprocess a source file
+src/InputListener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/InputListener.cpp.i
+.PHONY : src/InputListener.cpp.i
+
+src/InputListener.s: src/InputListener.cpp.s
+.PHONY : src/InputListener.s
+
+# target to generate assembly for a file
+src/InputListener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/InputListener.cpp.s
+.PHONY : src/InputListener.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,15 +174,39 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/playerSettings.o: src/playerSettings.cpp.o
+.PHONY : src/playerSettings.o
+
+# target to build an object file
+src/playerSettings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/playerSettings.cpp.o
+.PHONY : src/playerSettings.cpp.o
+
+src/playerSettings.i: src/playerSettings.cpp.i
+.PHONY : src/playerSettings.i
+
+# target to preprocess a source file
+src/playerSettings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/playerSettings.cpp.i
+.PHONY : src/playerSettings.cpp.i
+
+src/playerSettings.s: src/playerSettings.cpp.s
+.PHONY : src/playerSettings.s
+
+# target to generate assembly for a file
+src/playerSettings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/playerSettings.cpp.s
+.PHONY : src/playerSettings.cpp.s
 
 src/windowRenderer.o: src/windowRenderer.cpp.o
 .PHONY : src/windowRenderer.o
 
 # target to build an object file
 src/windowRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/windowRenderer.cpp.o
 .PHONY : src/windowRenderer.cpp.o
 
 src/windowRenderer.i: src/windowRenderer.cpp.i
@@ -166,7 +214,7 @@ src/windowRenderer.i: src/windowRenderer.cpp.i
 
 # target to preprocess a source file
 src/windowRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/windowRenderer.cpp.i
 .PHONY : src/windowRenderer.cpp.i
 
 src/windowRenderer.s: src/windowRenderer.cpp.s
@@ -174,7 +222,7 @@ src/windowRenderer.s: src/windowRenderer.cpp.s
 
 # target to generate assembly for a file
 src/windowRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdl2_demo.dir/build.make CMakeFiles/sdl2_demo.dir/src/windowRenderer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/windowRenderer.cpp.s
 .PHONY : src/windowRenderer.cpp.s
 
 # Help Target
@@ -185,10 +233,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... sdl2_demo"
+	@echo "... tetris"
+	@echo "... src/InputListener.o"
+	@echo "... src/InputListener.i"
+	@echo "... src/InputListener.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/playerSettings.o"
+	@echo "... src/playerSettings.i"
+	@echo "... src/playerSettings.s"
 	@echo "... src/windowRenderer.o"
 	@echo "... src/windowRenderer.i"
 	@echo "... src/windowRenderer.s"

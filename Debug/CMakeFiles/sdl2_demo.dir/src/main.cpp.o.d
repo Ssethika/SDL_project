@@ -305,5 +305,4 @@ CMakeFiles/sdl2_demo.dir/src/main.cpp.o: \
  /home/sethika/dev/sdl/example-project/src/util/types.hpp \
  /home/sethika/dev/sdl/example-project/src/windowRenderer.hpp \
  /usr/include/SDL2/SDL.h \
- /home/sethika/dev/sdl/example-project/src/util/colors.hpp \
- /usr/include/SDL2/SDL_video.h
+ /home/sethika/dev/sdl/example-project/src/util/colors.hpp

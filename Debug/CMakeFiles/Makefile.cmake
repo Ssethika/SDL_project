@@ -47,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/sdl2_demo.dir/DependInfo.cmake"
+  "CMakeFiles/tetris.dir/DependInfo.cmake"
   )

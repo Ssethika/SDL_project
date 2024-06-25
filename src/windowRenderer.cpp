@@ -1,7 +1,9 @@
 #include "windowRenderer.hpp"
+#include "inputListener.hpp"
 #include "util/loggers.hpp"
 #include <SDL_render.h>
 #include <SDL_video.h>
+#include <SDL_keyboard.h>
 
 // Default Constructor:
 Renderer::Renderer(std::string name, i32 width, i32 height, u32 flag)
@@ -22,29 +24,27 @@ Renderer::Renderer(std::string name, i32 width, i32 height, u32 flag)
   // TODO: continue on the creation of the renderer class
 }
 Renderer::~Renderer() {
-	RemoveWindow();
+  RemoveWindow();
   SDL_Quit();
 }
-void Renderer::SetBackgroundColor(const u8& r,const u8& g,const u8& b,const u8& a) noexcept {
-	background_color.red = r;
-	background_color.green = g;
+void Renderer::SetBackgroundColor(u8 r, u8 g, u8 b, u8 a) noexcept {
+  background_color.red = r;
+  background_color.green = g;
   background_color.blue = b;
   background_color.alpha = a;
 };
-void Renderer::SetBackgroundColor(const color& Color) noexcept{
-	background_color.red = Color.red;
-	background_color.green = Color.green;
-	background_color.blue = Color.blue;
-	background_color.alpha = Color.alpha;
+void Renderer::SetBackgroundColor(const color &Color) noexcept {
+  background_color.red = Color.red;
+  background_color.green = Color.green;
+  background_color.blue = Color.blue;
+  background_color.alpha = Color.alpha;
 }
- void Renderer::DisplayWindow() {
-  SDL_SetRenderDrawColor(renderer, background_color.red, background_color.green , background_color.blue, background_color.alpha);
+void Renderer::DisplayWindow() {
+  SDL_SetRenderDrawColor(renderer, background_color.red, background_color.green, background_color.blue, background_color.alpha);
   b8 quit = false;
-  SDL_Event e;
   while (!quit) {
-    while (SDL_PollEvent(&e) != 0) {
-      if (e.type == SDL_QUIT)
-        quit = true;
+    while (InputListener::ListenEvents() != 0) {
+      if (InputListener::GetEventType() == SDL_QUIT) quit = true;
     }
     SDL_RenderClear(renderer);
     SDL_RenderPresent(renderer);
