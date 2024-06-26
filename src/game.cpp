@@ -12,3 +12,5 @@ void Game::Run() {
     }
   }
 }
+
+// TODO: Now that we understand how to draw on the screen in SDL. Implement a function that creates a rectangle of whatever size we want and to draw it on the screen.

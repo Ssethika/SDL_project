@@ -3,7 +3,6 @@
 #include <unordered_map>
 #include <vector>
 
-// TODO: create a class that initilize all the keyboard inputs
 
 class PlayerSettings {
 public:
