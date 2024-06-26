@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/sethika/dev/sdl/example-project/src/entity.cpp" "CMakeFiles/tetris.dir/src/entity.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/entity.cpp.o.d"
   "/home/sethika/dev/sdl/example-project/src/game.cpp" "CMakeFiles/tetris.dir/src/game.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/game.cpp.o.d"
   "/home/sethika/dev/sdl/example-project/src/inputListener.cpp" "CMakeFiles/tetris.dir/src/inputListener.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/inputListener.cpp.o.d"
   "/home/sethika/dev/sdl/example-project/src/main.cpp" "CMakeFiles/tetris.dir/src/main.cpp.o" "gcc" "CMakeFiles/tetris.dir/src/main.cpp.o.d"

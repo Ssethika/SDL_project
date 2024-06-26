@@ -1,6 +1,12 @@
 #include "SDL.h"
 #include "util/colors.hpp"
 #include "util/types.hpp"
+#include "util/loggers.hpp"
+#include <SDL_render.h>
+#include <SDL_video.h>
+#include <SDL_keyboard.h>
+#include <SDL2/SDL.h>
+#include <SDL_image.h>
 #include <string>
 
 // Here is the renderer class
@@ -13,6 +19,7 @@ private:
 public:
   virtual void DisplayWindow() = 0;
   virtual void RemoveWindow() = 0;
+	virtual SDL_Texture* LoadTexture(const char* file) = 0;
 };
 
 class Renderer : public IRenderer {
@@ -31,6 +38,7 @@ public:
 
   virtual void DisplayWindow() override;
   virtual void RemoveWindow() override;
+	virtual SDL_Texture* LoadTexture(const char* file) override;
 
 private:
   SDL_Window *window;
@@ -40,6 +48,6 @@ private:
   i32 height;
   u32 flag;
   // default background color.
-  Color backgroundColor = WHITE;
+  Color backgroundColor = BLACK;
 
 };

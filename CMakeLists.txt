@@ -4,14 +4,23 @@ project(tetris VERSION 0.1.0)
 #include(CTest)
 #enable_testing()
 
-find_package(SDL2 REQUIRED)
-add_library(utilities SHARED IMPORTED)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+
+# find_package(SDL2 REQUIRED)
+# find_package(SDL2IMAGE REQUIRED)
+# add_library(utilities SHARED IMPORTED)
+INCLUDE(FindPkgConfig)
+
+PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
+PKG_SEARCH_MODULE(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
 
 file(GLOB_RECURSE CPP_FILES src/*.cpp)
 file(GLOB_RECURSE HPP_FILES src/*.hpp)
 add_executable(tetris ${CPP_FILES} ${HPP_FILES})
+# include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(${SDL2_INCLUDE_DIRS} ${SDL2IMAGE_INCLUDE_DIRS})
 
-target_link_libraries(tetris ${SDL2_LIBRARIES} GL ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_link_libraries(tetris ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES} ${CMAKE_CURRENT_SOURCE_DIR}/include)
 #set(CPACK_PROJECT_NAME $(PROJECT_NAME))
 #set(CPACK_PROJECT_VERSION $(PROJECT_VERSION))
 #INCLUDE(CPack)

@@ -1,13 +1,19 @@
 #include "windowRenderer.hpp"
-#include "inputListener.hpp"
-#include "util/loggers.hpp"
+#include "SDL_pixels.h"
+#include "SDL_timer.h"
+#include <SDL2/SDL.h>
+#include <SDL_image.h>
+#include <SDL_keyboard.h>
+#include <SDL_rect.h>
 #include <SDL_render.h>
 #include <SDL_video.h>
-#include <SDL_keyboard.h>
 
 // Default Constructor:
-Renderer::Renderer(const std::string& name, i32 width, i32 height, u32 flag)
+Renderer::Renderer(const std::string &name, i32 width, i32 height, u32 flag)
     : name(name), width(width), height(height), flag(flag) {
+  if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+    WARN("SDL has not been initialized.");
+  }
   window = SDL_CreateWindow(name.c_str(), SDL_WINDOWPOS_UNDEFINED,
                             SDL_WINDOWPOS_UNDEFINED, width, height, flag);
   if (window == NULL) {
@@ -39,13 +45,27 @@ void Renderer::SetBackgroundColor(const Color &color) noexcept {
   backgroundColor.blue = color.blue;
   backgroundColor.alpha = color.alpha;
 }
-void Renderer::RenderDrawColor()const {
-	SDL_SetRenderDrawColor(renderer, backgroundColor.red, backgroundColor.green, backgroundColor.blue, backgroundColor.alpha);
+void Renderer::RenderDrawColor() const {
+  SDL_SetRenderDrawColor(renderer, backgroundColor.red, backgroundColor.green,
+                         backgroundColor.blue, backgroundColor.alpha);
 }
+
+
+SDL_Rect rect = {0, 0, 100, 100};
 void Renderer::DisplayWindow() {
   SDL_RenderClear(renderer);
   SDL_RenderPresent(renderer);
-  
+}
+SDL_Texture *Renderer::LoadTexture(const char *filepath) {
+  if (filepath == NULL) {
+    WARN("The file path has not been specified");
+    return NULL;
+  }
+  SDL_Texture *texture = IMG_LoadTexture(renderer, filepath);
+  if (texture == NULL) {
+    WARN("The texture is not found or invalid");
+  }
+  return texture;
 }
 
 void Renderer::RemoveWindow() {
