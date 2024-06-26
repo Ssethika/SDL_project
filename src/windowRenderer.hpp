@@ -16,29 +16,30 @@ public:
 };
 
 class Renderer : public IRenderer {
-private:
-  SDL_Window *window;
-  SDL_Renderer *renderer;
-  std::string name;
-  i32 position_x;
-  i32 position_y;
-  i32 width;
-  i32 height;
-  u32 flag;
-  // default background color.
-  color background_color = WHITE;
-
 public:
-  Renderer(std::string name, i32 width, i32 height, u32 flag);
-  // We don't people copying a renderer
+  Renderer(const std::string& name, i32 width, i32 height, u32 flag);
+
   Renderer(const Renderer &other) = delete;
   Renderer &operator=(const Renderer &other) = delete;
   ~Renderer();
 
   // Set background color at runtime.
-  virtual void SetBackgroundColor(u8 r, u8 g, u8 b, u8 a) noexcept;
-  virtual void SetBackgroundColor(const color &Color) noexcept;
+	void RenderDrawColor() const;
+  void SetBackgroundColor(u8 r, u8 g, u8 b, u8 a) noexcept;
+  void SetBackgroundColor(const Color &color) noexcept;
+	Color GetBackGroundColor() noexcept;
 
   virtual void DisplayWindow() override;
   virtual void RemoveWindow() override;
+
+private:
+  SDL_Window *window;
+  SDL_Renderer *renderer;
+  std::string name;
+  i32 width;
+  i32 height;
+  u32 flag;
+  // default background color.
+  Color backgroundColor = WHITE;
+
 };

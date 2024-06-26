@@ -1,7 +1,7 @@
 #include "playerSettings.hpp"
 #include "util/algorithms.hpp"
 
-void PlayerSettings::InsertNewKeybinds(std::string key, char* value) {
+void PlayerSettings::InsertNewKeybinds(const std::string& key, char* value) {
 	for (const auto& pair : GetInstance().keybindings){
 		if (pair.second == value) {
 			WARN("There is already a keybinding for this a action.");

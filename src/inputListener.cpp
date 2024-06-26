@@ -2,9 +2,12 @@
 #include <SDL_events.h>
 
 const u8 InputListener::SetKeyboardState(int* numkeys){
-		_instance.current_keyboard_state = *SDL_GetKeyboardState(numkeys);
-		const u8 value = _instance.current_keyboard_state;
+		_instance.currentKeyboardState = *SDL_GetKeyboardState(numkeys);
+		const u8 value = _instance.currentKeyboardState;
     return value;
+	}
+bool InputListener::IsActionPressed(const char * action) { 
+		return std::string(GetCurrentKeyPressed(*GetEvent())) == std::string(PlayerSettings::GetKeybindings(action));
 	}
 InputListener InputListener::_instance;
 

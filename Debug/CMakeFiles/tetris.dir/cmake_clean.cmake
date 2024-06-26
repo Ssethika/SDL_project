@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tetris.dir/src/InputListener.cpp.o"
-  "CMakeFiles/tetris.dir/src/InputListener.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/game.cpp.o"
+  "CMakeFiles/tetris.dir/src/game.cpp.o.d"
+  "CMakeFiles/tetris.dir/src/inputListener.cpp.o"
+  "CMakeFiles/tetris.dir/src/inputListener.cpp.o.d"
   "CMakeFiles/tetris.dir/src/main.cpp.o"
   "CMakeFiles/tetris.dir/src/main.cpp.o.d"
   "CMakeFiles/tetris.dir/src/playerSettings.cpp.o"

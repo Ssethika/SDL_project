@@ -9,13 +9,6 @@
 // This class will be a singleton so that all parts of the program can have
 // access to Inputs that the user makes.
 class InputListener {
-protected:
-  InputListener(){};
-  b8 listening = true;
-  SDL_Event event;
-  static InputListener _instance;
-	u8 current_keyboard_state;
-
 public:
   InputListener(InputListener &other) = delete;
   void operator=(InputListener &) = delete;
@@ -25,9 +18,16 @@ public:
   static SDL_Event *GetEvent() { return &GetInstance().event; }
   static u32 GetEventType() { return GetInstance().event.type; }
 	static const u8 SetKeyboardState(int* numkeys);
-	static const u8 GetKeyboardState() {return GetInstance().current_keyboard_state;}
+	static const u8 GetKeyboardState() {return GetInstance().currentKeyboardState;}
 	static const char * GetCurrentKeyPressed(SDL_Event new_event) { return SDL_GetKeyName(InputListener::GetEvent()->key.keysym.sym);}
-	static bool IsActionPressed(char * action) { 
-		return std::string(GetCurrentKeyPressed(*GetEvent())) == std::string(PlayerSettings::GetKeybindings(action));
-	}
+	static bool IsActionPressed(const char * action);
+	
+private:
+  InputListener(){};
+  b8 listening = true;
+  SDL_Event event;
+  static InputListener _instance;
+	u8 currentKeyboardState;
+
+
 };

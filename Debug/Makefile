@@ -129,29 +129,53 @@ tetris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
 .PHONY : tetris/fast
 
-src/InputListener.o: src/InputListener.cpp.o
-.PHONY : src/InputListener.o
+src/game.o: src/game.cpp.o
+.PHONY : src/game.o
 
 # target to build an object file
-src/InputListener.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/InputListener.cpp.o
-.PHONY : src/InputListener.cpp.o
+src/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game.cpp.o
+.PHONY : src/game.cpp.o
 
-src/InputListener.i: src/InputListener.cpp.i
-.PHONY : src/InputListener.i
+src/game.i: src/game.cpp.i
+.PHONY : src/game.i
 
 # target to preprocess a source file
-src/InputListener.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/InputListener.cpp.i
-.PHONY : src/InputListener.cpp.i
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
 
-src/InputListener.s: src/InputListener.cpp.s
-.PHONY : src/InputListener.s
+src/game.s: src/game.cpp.s
+.PHONY : src/game.s
 
 # target to generate assembly for a file
-src/InputListener.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/InputListener.cpp.s
-.PHONY : src/InputListener.cpp.s
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
+
+src/inputListener.o: src/inputListener.cpp.o
+.PHONY : src/inputListener.o
+
+# target to build an object file
+src/inputListener.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/inputListener.cpp.o
+.PHONY : src/inputListener.cpp.o
+
+src/inputListener.i: src/inputListener.cpp.i
+.PHONY : src/inputListener.i
+
+# target to preprocess a source file
+src/inputListener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/inputListener.cpp.i
+.PHONY : src/inputListener.cpp.i
+
+src/inputListener.s: src/inputListener.cpp.s
+.PHONY : src/inputListener.s
+
+# target to generate assembly for a file
+src/inputListener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/inputListener.cpp.s
+.PHONY : src/inputListener.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -234,9 +258,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tetris"
-	@echo "... src/InputListener.o"
-	@echo "... src/InputListener.i"
-	@echo "... src/InputListener.s"
+	@echo "... src/game.o"
+	@echo "... src/game.i"
+	@echo "... src/game.s"
+	@echo "... src/inputListener.o"
+	@echo "... src/inputListener.i"
+	@echo "... src/inputListener.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

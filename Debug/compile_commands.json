@@ -1,9 +1,15 @@
 [
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",
-  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/InputListener.cpp.o -c /home/sethika/dev/sdl/example-project/src/InputListener.cpp",
-  "file": "/home/sethika/dev/sdl/example-project/src/InputListener.cpp",
-  "output": "CMakeFiles/tetris.dir/src/InputListener.cpp.o"
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/game.cpp.o -c /home/sethika/dev/sdl/example-project/src/game.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/game.cpp",
+  "output": "CMakeFiles/tetris.dir/src/game.cpp.o"
+},
+{
+  "directory": "/home/sethika/dev/sdl/example-project/Debug",
+  "command": "/usr/bin/c++  -isystem /usr/include/SDL2 -g -o CMakeFiles/tetris.dir/src/inputListener.cpp.o -c /home/sethika/dev/sdl/example-project/src/inputListener.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/inputListener.cpp",
+  "output": "CMakeFiles/tetris.dir/src/inputListener.cpp.o"
 },
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",
