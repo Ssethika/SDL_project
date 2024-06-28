@@ -13,6 +13,7 @@ public:
 	void GameLoop() { renderer->DisplayWindow();}
 	~Game() {
 		delete renderer;
+
 	}
 	inline Renderer* GetRenderer() const { return renderer;}
 	void Run(); 
