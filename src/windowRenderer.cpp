@@ -1,12 +1,12 @@
 #include "windowRenderer.hpp"
-#include "SDL_pixels.h"
-#include "SDL_timer.h"
+#include "util/loggers.hpp"
 #include <SDL2/SDL.h>
 #include <SDL_image.h>
 #include <SDL_keyboard.h>
 #include <SDL_rect.h>
 #include <SDL_render.h>
 #include <SDL_video.h>
+#include <iterator>
 
 // Default Constructor:
 Renderer::Renderer(const std::string &name, i32 width, i32 height, u32 flag)
@@ -45,13 +45,32 @@ void Renderer::SetBackgroundColor(const Color &color) noexcept {
   backgroundColor.blue = color.blue;
   backgroundColor.alpha = color.alpha;
 }
-void Renderer::RenderDrawColor() const {
+void Renderer::RenderBackgroundColor() const {
   SDL_SetRenderDrawColor(renderer, backgroundColor.red, backgroundColor.green,
                          backgroundColor.blue, backgroundColor.alpha);
 }
+void Renderer::DrawRectangle(v2<int> Position, v2<int> Dimension,const Color &color) {
+  SDL_Rect rect = {Position.x, Position.y, Dimension.x, Dimension.y};
+  Color rect_color = {color.red, color.green, color.blue, color.alpha};
+  SDL_RenderClear(renderer);
+  SDL_SetRenderDrawColor(renderer, rect_color.red, rect_color.green,
+                         rect_color.blue, rect_color.alpha);
+  SDL_RenderFillRect(renderer, &rect);
+  SDL_RenderPresent(renderer);
+  RenderBackgroundColor();
+}
+void Renderer::EraseRectange(v2<int> Position, v2<int> Dimension){
+	SDL_Rect rect = {Position.x, Position.y, Dimension.x, Dimension.y};
+	SDL_RenderClear(renderer);
+	RenderBackgroundColor();
+	SDL_RenderFillRect(renderer, &rect);
+	SDL_RenderPresent(renderer);
+	RenderBackgroundColor();
+}
 
 
-SDL_Rect rect = {0, 0, 100, 100};
+SDL_Rect rect = {100, 100, 64, 64};
+
 void Renderer::DisplayWindow() {
   SDL_RenderClear(renderer);
   SDL_RenderPresent(renderer);
@@ -66,6 +85,9 @@ SDL_Texture *Renderer::LoadTexture(const char *filepath) {
     WARN("The texture is not found or invalid");
   }
   return texture;
+}
+void Renderer::Clear() {
+	SDL_RenderClear(renderer);		
 }
 
 void Renderer::RemoveWindow() {

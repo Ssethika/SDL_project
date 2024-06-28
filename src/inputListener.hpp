@@ -19,7 +19,8 @@ public:
   static u32 GetEventType() { return GetInstance().event.type; }
 	static const u8 SetKeyboardState(int* numkeys);
 	static const u8 GetKeyboardState() {return GetInstance().currentKeyboardState;}
-	static const char * GetCurrentKeyPressed(SDL_Event new_event) { return SDL_GetKeyName(InputListener::GetEvent()->key.keysym.sym);}
+	static const char * GetCurrentKeyPressed() { return SDL_GetKeyName(InputListener::GetEvent()->key.keysym.sym);}
+	static bool KeyboardIsPressed();
 	static bool IsActionPressed(const char * action);
 	
 private:

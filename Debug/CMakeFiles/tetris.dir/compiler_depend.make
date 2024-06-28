@@ -67,15 +67,10 @@ CMakeFiles/tetris.dir/src/game.cpp.o: /home/sethika/dev/sdl/example-project/src/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
-  /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
-  /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
-  /usr/include/c++/13/bits/atomic_base.h \
-  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
@@ -118,9 +113,6 @@ CMakeFiles/tetris.dir/src/game.cpp.o: /home/sethika/dev/sdl/example-project/src/
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
-  /usr/include/c++/13/bits/shared_ptr.h \
-  /usr/include/c++/13/bits/shared_ptr_atomic.h \
-  /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -131,15 +123,12 @@ CMakeFiles/tetris.dir/src/game.cpp.o: /home/sethika/dev/sdl/example-project/src/
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
@@ -160,7 +149,6 @@ CMakeFiles/tetris.dir/src/game.cpp.o: /home/sethika/dev/sdl/example-project/src/
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
-  /usr/include/c++/13/ext/concurrence.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
@@ -171,11 +159,8 @@ CMakeFiles/tetris.dir/src/game.cpp.o: /home/sethika/dev/sdl/example-project/src/
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/math.h \
-  /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
@@ -517,6 +502,7 @@ CMakeFiles/tetris.dir/src/inputListener.cpp.o: /home/sethika/dev/sdl/example-pro
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -681,7 +667,6 @@ CMakeFiles/tetris.dir/src/main.cpp.o: /home/sethika/dev/sdl/example-project/src/
   /home/sethika/dev/sdl/example-project/src/playerSettings.hpp \
   /home/sethika/dev/sdl/example-project/src/util/colors.hpp \
   /home/sethika/dev/sdl/example-project/src/util/loggers.hpp \
-  /home/sethika/dev/sdl/example-project/src/util/macros.hpp \
   /home/sethika/dev/sdl/example-project/src/util/types.hpp \
   /home/sethika/dev/sdl/example-project/src/windowRenderer.hpp \
   /usr/include/SDL2/SDL.h \
@@ -1434,6 +1419,7 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -1463,6 +1449,7 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/math.h \
   /usr/include/c++/13/new \
@@ -1698,6 +1685,8 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h
 
 
+/usr/include/c++/13/bits/stream_iterator.h:
+
 /usr/include/c++/13/bits/stl_heap.h:
 
 /usr/include/c++/13/bits/stl_algo.h:
@@ -1744,11 +1733,31 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/linux/close_range.h:
 
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/include/c++/13/memory:
+
+/usr/include/c++/13/ext/concurrence.h:
+
 /usr/include/c++/13/csignal:
 
-/home/sethika/dev/sdl/example-project/src/util/macros.hpp:
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
 
 /home/sethika/dev/sdl/example-project/src/main.cpp:
+
+/usr/include/c++/13/cstring:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
@@ -1763,6 +1772,10 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavecintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/x86gprintrin.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/vaesintrin.h:
 
@@ -1912,35 +1925,13 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16intrin.h:
+/usr/include/c++/13/bits/stl_vector.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/SDL2/SDL_error.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmavlintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/SDL2/SDL_keyboard.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -1948,17 +1939,11 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/13/bits/erase_if.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/system_error:
 
@@ -1982,6 +1967,12 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/enqcmdintrin.h:
+
+/usr/include/wchar.h:
+
 /usr/include/errno.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
@@ -1996,9 +1987,15 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/bits/istream.tcc:
 
+/usr/include/c++/13/bits/erase_if.h:
+
 /usr/include/c++/13/bits/enable_special_members.h:
 
+/usr/include/c++/13/cstdio:
+
 /usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/13/bits/exception.h:
 
@@ -2012,53 +2009,37 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/typeinfo:
 
+/usr/include/SDL2/SDL_keycode.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniintrin.h:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmavlintrin.h:
 
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/enqcmdintrin.h:
-
-/usr/include/wchar.h:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/c++/13/bits/basic_ios.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/c++/13/bits/atomic_base.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/c++/13/cstdio:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bit:
 
 /usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
@@ -2078,15 +2059,17 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/SDL2/SDL_image.h:
 
+/usr/include/c++/13/iterator:
+
 /usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/SDL2/SDL_hidapi.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /home/sethika/dev/sdl/example-project/src/game.cpp:
 
@@ -2099,6 +2082,10 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniint8intrin.h:
 
 /usr/include/SDL2/SDL_haptic.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/SDL2/SDL_log.h:
 
@@ -2130,29 +2117,19 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/SDL2/SDL_gamecontroller.h:
 
+/usr/include/c++/13/bits/stringfwd.h:
+
 /usr/include/c++/13/backward/binders.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/popcntintrin.h:
 
 /home/sethika/dev/sdl/example-project/src/util/colors.hpp:
 
-/usr/include/SDL2/SDL_error.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h:
 
 /usr/include/SDL2/SDL_mouse.h:
 
 /usr/include/SDL2/SDL_clipboard.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
-
-/usr/include/SDL2/SDL_thread.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
@@ -2174,15 +2151,17 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16intrin.h:
 
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h:
-
-/usr/include/SDL2/SDL_keyboard.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/SDL2/SDL_audio.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512erintrin.h:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/include/c++/13/bits/specfun.h:
 
 /usr/include/c++/13/bits/basic_string.h:
 
@@ -2217,6 +2196,12 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /home/sethika/dev/sdl/example-project/src/util/loggers.hpp:
 
 /usr/include/c++/13/cstdlib:
+
+/usr/include/c++/13/bits/string_view.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/SDL2/SDL_guid.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/shaintrin.h:
 
@@ -2264,14 +2249,6 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/iosfwd:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/13/bits/unique_ptr.h:
-
 /usr/include/assert.h:
 
 /usr/include/SDL2/SDL_joystick.h:
@@ -2292,15 +2269,31 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/SDL2/SDL_video.h:
 
-/usr/include/c++/13/memory:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/SDL2/SDL_locale.h:
 
 /usr/include/c++/13/bits/localefwd.h:
 
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
 /usr/include/SDL2/SDL_messagebox.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h:
+
+/usr/include/SDL2/SDL_thread.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/SDL2/SDL_metal.h:
 
@@ -2319,16 +2312,6 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/include/c++/13/bits/requires_hosted.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/SDL2/SDL_keycode.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/amxcomplexintrin.h:
 
@@ -2360,37 +2343,19 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/SDL2/SDL_surface.h:
 
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
+/usr/include/c++/13/bits/hashtable.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
 /usr/include/SDL2/SDL_system.h:
-
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
-/usr/include/c++/13/initializer_list:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/SDL2/SDL_timer.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/avx512erintrin.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/SDL2/SDL_guid.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
-
-/usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/bits/unordered_map.h:
 
@@ -2409,6 +2374,12 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/include/c++/13/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/clocale:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/cetintrin.h:
 
@@ -2430,6 +2401,10 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/debug/assertions.h:
 
+/usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/c++/13/exception:
+
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/c++/13/bits/stl_pair.h:
@@ -2441,8 +2416,6 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/include/c++/13/new:
 
 /usr/include/inttypes.h:
-
-/usr/include/c++/13/ext/concurrence.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmaintrin.h:
 
@@ -2462,16 +2435,6 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/c++/13/limits:
 
-/usr/include/c++/13/exception:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
-/usr/include/signal.h:
-
-/usr/include/strings.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
 /usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/waitpkgintrin.h:
@@ -2487,6 +2450,10 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/include/c++/13/string:
 
 /usr/include/features-time64.h:
+
+/usr/include/c++/13/initializer_list:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
 
@@ -2546,6 +2513,14 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/string.h:
 
+/usr/include/signal.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
@@ -2574,6 +2549,8 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
@@ -2584,6 +2561,10 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -2591,3 +2572,13 @@ CMakeFiles/tetris.dir/src/windowRenderer.cpp.o: /home/sethika/dev/sdl/example-pr
 /usr/include/c++/13/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
