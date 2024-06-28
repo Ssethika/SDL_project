@@ -7,17 +7,18 @@ void Game::Run() {
   gameIsRunning = true;
   GetRenderer()->RenderBackgroundColor();
   while (gameIsRunning == true) {
-    while (InputListener::ListenEvents() != 0) {
-      if (InputListener::GetEventType() == SDL_QUIT)
-        gameIsRunning = false;
-			LOG(InputListener::GetCurrentKeyPressed());
-      if (InputListener::IsActionPressed("jump")) {
-        GetRenderer()->DrawRectangle({x, y}, {100, 100}, WHITE);
-        SDL_Delay(50);
-      } else {
-        GetRenderer()->EraseRectange({x, y}, {100, 100});
-      }
-    }
+    if (InputListener::GetEventType() == SDL_QUIT)
+      gameIsRunning = false;
+    LOG(InputListener::GetCurrentKeyPressed());
+    /* if (InputListener::IsActionPressed("jump")) { */
+		GetRenderer()->Clear();
+    GetRenderer()->DrawRectangle({x, y}, {100, 100}, WHITE);
+    GetRenderer()->DrawRectangle({300, 100}, {100, 100}, WHITE);
+		GetRenderer()->Present();
+    /* } else { */
+    /* GetRenderer()->EraseRectangle({x, y}, {100, 100}); */
+    /* GetRenderer()->EraseRectangle({300, 100}, {100, 100}); */
+    /* } */
   }
 }
 /* new stufffffff */

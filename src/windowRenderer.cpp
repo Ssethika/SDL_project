@@ -14,6 +14,9 @@ Renderer::Renderer(const std::string &name, i32 width, i32 height, u32 flag)
   if (SDL_Init(SDL_INIT_VIDEO) != 0) {
     WARN("SDL has not been initialized.");
   }
+	if (IMG_Init(IMG_INIT_JPG) != 0) {
+		WARN("IMG has not been initilized.");
+	}
   window = SDL_CreateWindow(name.c_str(), SDL_WINDOWPOS_UNDEFINED,
                             SDL_WINDOWPOS_UNDEFINED, width, height, flag);
   if (window == NULL) {
@@ -52,24 +55,23 @@ void Renderer::RenderBackgroundColor() const {
 void Renderer::DrawRectangle(v2<int> Position, v2<int> Dimension,const Color &color) {
   SDL_Rect rect = {Position.x, Position.y, Dimension.x, Dimension.y};
   Color rect_color = {color.red, color.green, color.blue, color.alpha};
-  SDL_RenderClear(renderer);
   SDL_SetRenderDrawColor(renderer, rect_color.red, rect_color.green,
                          rect_color.blue, rect_color.alpha);
   SDL_RenderFillRect(renderer, &rect);
-  SDL_RenderPresent(renderer);
   RenderBackgroundColor();
+
 }
-void Renderer::EraseRectange(v2<int> Position, v2<int> Dimension){
+
+/* void Renderer::DrawRectangles(const SDL_Rects* rects) { */
+	/* SDL_RenderFillRects(renderer); */
+/* } */
+// TODO: Continue the function on rendering a group of rectangles.
+
+void Renderer::EraseRectangle(v2<int> Position, v2<int> Dimension){
 	SDL_Rect rect = {Position.x, Position.y, Dimension.x, Dimension.y};
-	SDL_RenderClear(renderer);
 	RenderBackgroundColor();
 	SDL_RenderFillRect(renderer, &rect);
-	SDL_RenderPresent(renderer);
-	RenderBackgroundColor();
 }
-
-
-SDL_Rect rect = {100, 100, 64, 64};
 
 void Renderer::DisplayWindow() {
   SDL_RenderClear(renderer);
@@ -89,8 +91,16 @@ SDL_Texture *Renderer::LoadTexture(const char *filepath) {
 void Renderer::Clear() {
 	SDL_RenderClear(renderer);		
 }
+void Renderer::Present() {
+
+}
 
 void Renderer::RemoveWindow() {
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
+}
+
+
+void Renderer::RendererMulitpleRects() const {
+	
 }
