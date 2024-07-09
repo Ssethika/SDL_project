@@ -1,5 +1,4 @@
 #include "util/loggers.hpp"
-#include "playerSettings.hpp"
 #include "util/types.hpp"
 #include <SDL_events.h>
 #include <SDL_keyboard.h>

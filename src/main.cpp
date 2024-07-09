@@ -9,10 +9,8 @@
 #include <memory>
 #include <string>
 
-std::unique_ptr<Game> game = std::make_unique<Game>();
-
 int main(int argc, char *argv[]) {
-  game->Run();
+	Game::_instance->Run();
   return 0;
 };
 

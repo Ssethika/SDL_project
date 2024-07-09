@@ -7,15 +7,14 @@
 #include <SDL_rect.h>
 #include <SDL_render.h>
 #include <SDL_video.h>
-#include <iterator>
 
 // Default Constructor:
 Renderer::Renderer(const std::string &name, i32 width, i32 height, u32 flag)
     : name(name), width(width), height(height), flag(flag) {
-  if (SDL_Init(SDL_INIT_VIDEO) != 0) 
+  if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) != 0) 
     WARN("SDL has not been initialized.");
   
-  if (!(IMG_Init(IMG_INIT_PNG)))
+  if (!(IMG_Init(IMG_INIT_JPG)))
     std::cout << "IMG_init has failed. Error: " << SDL_GetError() << std::endl;
 
   window = SDL_CreateWindow(name.c_str(), SDL_WINDOWPOS_UNDEFINED,
@@ -114,5 +113,3 @@ void Renderer::RemoveWindow() {
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
 }
-
-void Renderer::RendererMulitpleRects() const {}

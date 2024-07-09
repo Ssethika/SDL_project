@@ -129,30 +129,6 @@ tetris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/build
 .PHONY : tetris/fast
 
-src/entity.o: src/entity.cpp.o
-.PHONY : src/entity.o
-
-# target to build an object file
-src/entity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/entity.cpp.o
-.PHONY : src/entity.cpp.o
-
-src/entity.i: src/entity.cpp.i
-.PHONY : src/entity.i
-
-# target to preprocess a source file
-src/entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/entity.cpp.i
-.PHONY : src/entity.cpp.i
-
-src/entity.s: src/entity.cpp.s
-.PHONY : src/entity.s
-
-# target to generate assembly for a file
-src/entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/entity.cpp.s
-.PHONY : src/entity.cpp.s
-
 src/game.o: src/game.cpp.o
 .PHONY : src/game.o
 
@@ -249,6 +225,78 @@ src/playerSettings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/playerSettings.cpp.s
 .PHONY : src/playerSettings.cpp.s
 
+src/square.o: src/square.cpp.o
+.PHONY : src/square.o
+
+# target to build an object file
+src/square.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/square.cpp.o
+.PHONY : src/square.cpp.o
+
+src/square.i: src/square.cpp.i
+.PHONY : src/square.i
+
+# target to preprocess a source file
+src/square.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/square.cpp.i
+.PHONY : src/square.cpp.i
+
+src/square.s: src/square.cpp.s
+.PHONY : src/square.s
+
+# target to generate assembly for a file
+src/square.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/square.cpp.s
+.PHONY : src/square.cpp.s
+
+src/tetrominos.o: src/tetrominos.cpp.o
+.PHONY : src/tetrominos.o
+
+# target to build an object file
+src/tetrominos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/tetrominos.cpp.o
+.PHONY : src/tetrominos.cpp.o
+
+src/tetrominos.i: src/tetrominos.cpp.i
+.PHONY : src/tetrominos.i
+
+# target to preprocess a source file
+src/tetrominos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/tetrominos.cpp.i
+.PHONY : src/tetrominos.cpp.i
+
+src/tetrominos.s: src/tetrominos.cpp.s
+.PHONY : src/tetrominos.s
+
+# target to generate assembly for a file
+src/tetrominos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/tetrominos.cpp.s
+.PHONY : src/tetrominos.cpp.s
+
+src/timer.o: src/timer.cpp.o
+.PHONY : src/timer.o
+
+# target to build an object file
+src/timer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/timer.cpp.o
+.PHONY : src/timer.cpp.o
+
+src/timer.i: src/timer.cpp.i
+.PHONY : src/timer.i
+
+# target to preprocess a source file
+src/timer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/timer.cpp.i
+.PHONY : src/timer.cpp.i
+
+src/timer.s: src/timer.cpp.s
+.PHONY : src/timer.s
+
+# target to generate assembly for a file
+src/timer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris.dir/build.make CMakeFiles/tetris.dir/src/timer.cpp.s
+.PHONY : src/timer.cpp.s
+
 src/windowRenderer.o: src/windowRenderer.cpp.o
 .PHONY : src/windowRenderer.o
 
@@ -282,9 +330,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tetris"
-	@echo "... src/entity.o"
-	@echo "... src/entity.i"
-	@echo "... src/entity.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"
@@ -297,6 +342,15 @@ help:
 	@echo "... src/playerSettings.o"
 	@echo "... src/playerSettings.i"
 	@echo "... src/playerSettings.s"
+	@echo "... src/square.o"
+	@echo "... src/square.i"
+	@echo "... src/square.s"
+	@echo "... src/tetrominos.o"
+	@echo "... src/tetrominos.i"
+	@echo "... src/tetrominos.s"
+	@echo "... src/timer.o"
+	@echo "... src/timer.i"
+	@echo "... src/timer.s"
 	@echo "... src/windowRenderer.o"
 	@echo "... src/windowRenderer.i"
 	@echo "... src/windowRenderer.s"

@@ -1,12 +1,6 @@
 [
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",
-  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/libpng16 -I/usr/include/webp -g -o CMakeFiles/tetris.dir/src/entity.cpp.o -c /home/sethika/dev/sdl/example-project/src/entity.cpp",
-  "file": "/home/sethika/dev/sdl/example-project/src/entity.cpp",
-  "output": "CMakeFiles/tetris.dir/src/entity.cpp.o"
-},
-{
-  "directory": "/home/sethika/dev/sdl/example-project/Debug",
   "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/libpng16 -I/usr/include/webp -g -o CMakeFiles/tetris.dir/src/game.cpp.o -c /home/sethika/dev/sdl/example-project/src/game.cpp",
   "file": "/home/sethika/dev/sdl/example-project/src/game.cpp",
   "output": "CMakeFiles/tetris.dir/src/game.cpp.o"
@@ -28,6 +22,24 @@
   "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/libpng16 -I/usr/include/webp -g -o CMakeFiles/tetris.dir/src/playerSettings.cpp.o -c /home/sethika/dev/sdl/example-project/src/playerSettings.cpp",
   "file": "/home/sethika/dev/sdl/example-project/src/playerSettings.cpp",
   "output": "CMakeFiles/tetris.dir/src/playerSettings.cpp.o"
+},
+{
+  "directory": "/home/sethika/dev/sdl/example-project/Debug",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/libpng16 -I/usr/include/webp -g -o CMakeFiles/tetris.dir/src/square.cpp.o -c /home/sethika/dev/sdl/example-project/src/square.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/square.cpp",
+  "output": "CMakeFiles/tetris.dir/src/square.cpp.o"
+},
+{
+  "directory": "/home/sethika/dev/sdl/example-project/Debug",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/libpng16 -I/usr/include/webp -g -o CMakeFiles/tetris.dir/src/tetrominos.cpp.o -c /home/sethika/dev/sdl/example-project/src/tetrominos.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/tetrominos.cpp",
+  "output": "CMakeFiles/tetris.dir/src/tetrominos.cpp.o"
+},
+{
+  "directory": "/home/sethika/dev/sdl/example-project/Debug",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/libpng16 -I/usr/include/webp -g -o CMakeFiles/tetris.dir/src/timer.cpp.o -c /home/sethika/dev/sdl/example-project/src/timer.cpp",
+  "file": "/home/sethika/dev/sdl/example-project/src/timer.cpp",
+  "output": "CMakeFiles/tetris.dir/src/timer.cpp.o"
 },
 {
   "directory": "/home/sethika/dev/sdl/example-project/Debug",

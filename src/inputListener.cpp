@@ -1,5 +1,7 @@
 #include <cstring>
 #include "inputListener.hpp"
+#include "playerSettings.hpp"
+#include "game.hpp"
 #include <SDL_events.h>
 
 const u8 InputListener::SetKeyboardState(int *numkeys) {
@@ -23,3 +25,4 @@ bool InputListener::KeyboardIsPressed() {
   return keyPressed;
 }
 InputListener InputListener::_instance;
+

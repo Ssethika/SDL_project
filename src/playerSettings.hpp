@@ -1,7 +1,6 @@
 #include "util/loggers.hpp"
-#include <unordered_map>
+#include <map>
 #include <vector>
-
 
 class PlayerSettings {
 public:
@@ -11,15 +10,18 @@ public:
 
   static PlayerSettings &GetInstance() { return _instance; };
 
-  std::unordered_map<std::string, char *> keybindings;
+  std::map<std::string, char *> keybindings;
 
-  static void	InsertNewKeybinds(const std::string &key, char *value);
+  static void InsertNewKeybinds(const std::string &key, char *value);
 
-  static inline char *GetKeybindings(const char *key) { return GetInstance().keybindings[key]; }
+  static inline char *GetKeybindings(const char *key) {
+    return GetInstance().keybindings[key];
+  }
 
 private:
   PlayerSettings() {
-    PlayerSettings::InsertNewKeybinds("jump", (char *)"Space");
+    PlayerSettings::InsertNewKeybinds("move_left", (char *)"Left");
+    PlayerSettings::InsertNewKeybinds("move_right", (char *)"Right");
   };
 
   static PlayerSettings _instance;
